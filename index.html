@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Shop Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="root">
+  <header class="header">
+    <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> cake</a>
+    <nav class="navbar">
+      <a href="#">home</a>
+      <a href="#">shop</a>
+      <a href="#">about</a>
+      <a href="#">review</a>
+      <a href="#">blog</a>
+      <a href="#">contact</a>
+    </nav>
+    <div id="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="search-btn" class="fas fa-search"></div>
+      <a href="https://file.mockplus.com/image/2019/05/2b87daf0-c512-499b-8d42-e8acf6f8771d.png">
+      <div id="cart-btn" class="fas fa-shopping-cart"></div>
+      </a>
+      <div id="login-btn" class="fas fa-user"></div>
+    </div>
+    <div id="menu" style="display: none;">
+      <h3>Menu Content</h3>
+      <p>This is a side menu with links.</p>
+  </div>
+  
+  <div id="search-input" style="display: none;">
+      <input type="text" placeholder="Search products..." />
+      <button>Search</button>
+  </div>
+  
+  <div id="cart" style="display: none;">
+      <h3>Your Cart</h3>
+      <p>No items in your cart.</p>
+  </div>
+  
+  <div id="login-form" style="display: none;">
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button>Login</button>
+  </div>
+  
+  </header>
+  <section class="home" id="home">
+    <div class="slides-container">
+      <div class="slide active">
+        <div class="content">
+          <span>Have a Cake -A -Licious</span>
+          <h3>upto 50% off</h3>
+          <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="img">
+          <img src="https://www.bakehoney.com/media/24366/conversions/28390_09-02-2022_13-18-30_name_0This-Beautiful-Heart-Cake--is-a-percect-cake-for-valentines-day-cele-banner.jpg" alt="Cake 1" height="220px" width="220px">
+        <div class="dot"></div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <span>Have a Cake -A -Licious</span>
+          <h3>upto 50% off</h3>
+          <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="img">
+          <img src="https://th.bing.com/th/id/OIP.U4QZprAbX0YAk4EmRQ6N7gHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Cake 2" height="220px" width="220px">
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <span>Have a Cake -A -Licious</span>
+          <h3>upto 50% off</h3>
+          <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="img">
+          <img src="https://tatyanaseverydayfood.com/wp-content/uploads/2022/02/Strawberry-Vanilla-Heart-Cake-recipe-1.jpg" alt="Cake 3"  height="220px" width="220px">
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+    <div class="dots-container"></div>
+    <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+    <div id="prev-slide" class="fas fa-angle-left" onclick="prev()"></div>
+    <div class="progress-bar">
+    </div>
+  </section>
+<section class="banner-container">
+  <div class="banner">
+    <img src="https://i1.wp.com/albanysinsanity.com/wp-content/uploads/strawberry-birthday-cakes-chocolate-covered-strawberries-birthday-cake-cakes-and-crafts.jpg?w=640" alt="" height="150px" width="150px">
+    <div class="content">
+      <span><h2>limited sales</h2></span>
+      <h3>upto 50% off</h3>
+      <h4><del>700 ₹</del>ch<ins>350 ₹</ins></h4>
+      <a href="#" class="btn">shop now</a>
+    </div>
+  </div>
+  <div class="banner">
+    <img src="https://th.bing.com/th/id/OIP.aIdhoUi6_B8KH_yX_0KHlQHaF7?w=186&h=149&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt=""  height="220px" width="220px">
+    <div class="content">
+      <span><h2>limited sales</h2></span>
+      <h3>upto 50% off</h3>
+      <h4><s style="color: red;">800 ₹</s> 400 ₹</h4>
+      <a href="#" class="btn">shop now</a>
+    </div>
+  </div>
+  <div class="banner">
+    <img src="https://deerfieldsbakery.com/cdn/shop/files/Gelato-Mint-Chocolate-Chip-Cake_1800x1800.jpg?v=1682446365" alt=""  height="220px" width="220px">
+    <div class="content">
+      <span><h2>limited sales</h2></span>
+      <h3>upto 50% off</h3>
+      <h4><del>600 ₹</del> 300 ₹</h4>
+      <a href="#" class="btn">shop now</a>
+    </div>
+  </div>
+</section>
+  <div class="heading">
+    <h1>our shop</h1>
+  </div>
+  <section class="category">
+    <h1 class="title">our <span>category</span><a href="#">view all >></a> </h1>
+  <div class="box-container">
+    <a href="#"class="box">
+      <img src="https://cdn.pixabay.com/photo/2021/06/11/18/18/cake-6329183_1280.jpg" alt="" height="220px" width="220px">
+      <h3>Irish-Brown-Bread</h3>
+    </a>
+    <a href="#"class="box">
+      <img src="https://th.bing.com/th/id/OIP.0ABm1ZSteRewYnQV3Y5MYAHaE8?w=297&h=198&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" height="220px" width="220px">
+      <h3>Love Cupcakes</h3>
+    </a>
+    <a href="#"class="box">
+      <img src="https://th.bing.com/th/id/OIP.VB0zxYegMsD5VtxGWPZKkgHaLG?rs=1&pid=ImgDetMain" alt="" height="220px" width="220px">
+      <h3>German chocolate Cake</h3>
+    </a>
+    <a href="#"class="box">
+      <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/02/13/10/chocolate-istock.jpg" alt="" height="220px" width="220px">
+      <h3>Dark chocolate</h3>
+    </a>
+      <a href="#"class="box">
+      <img src="https://www.bloombakers.co.uk/wp-content/uploads/2021/07/I-love-you-jam-biscuits-square.jpg" alt="" height="220px" width="220px">
+      <h3>Love Biscuits</h3>
+    </a>
+  </div>
+  </section>
+  <section class="products">
+    <section class="category">
+    <h1 class="title">our <span>products</span><a href="#">view all >></a> </h1>
+  <div class="box-container">
+    <div class="box">
+      <div class="icons">
+    <a href="#" class="fas fa-shopping-cart"></a>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-eye"></a>
+    </div>
+    <div class="img">
+      <img src="https://i.pinimg.com/originals/41/4f/44/414f445e3a0489ea51a295bc936f8673.jpg" alt="no" height="220px" width="220px">
+    </div>
+    <div class="content">
+      <h3>Squishmallow Cake</h3>
+      <div class="price">#299.99</div>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+      <div class="icons">
+    <a href="#" class="fas fa-shopping-cart"></a>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-eye"></a>
+    </div>
+    <div class="img">
+      <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k/Edit/2023-01-Chocolate-Strawberry-Cakes/chocolate-strawberry-cake-1" alt="no" height="20px" width="50px">
+    </div>
+    <div class="content">
+      <h3>chocolate-strawberry-cake</h3>
+      <div class="price">#399.99</div>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+      <div class="icons">
+    <a href="#" class="fas fa-shopping-cart"></a>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-eye"></a>
+    </div>
+    <div class="img">
+      <img src="https://i.pinimg.com/originals/1f/8f/db/1f8fdb4497719e8a7224b4f7c29ea238.jpg" alt="no" height="220px" width="220px">
+    </div>
+    <div class="content">
+      <h3>Rose swirls cake</h3>
+      <div class="price">#199.99</div>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+      <div class="icons">
+    <a href="#" class="fas fa-shopping-cart"></a>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-eye"></a>
+    </div>
+    <div class="img">
+      <img src="https://th.bing.com/th/id/OIP.EvKYKVJV6XFPpcBHBy-E7QHaJQ?pid=ImgDet&w=198&h=247&c=7&dpr=1.3" alt="no" height="220px" width="220px">
+    </div>
+    <div class="content">
+      <h3>Green Cake</h3>
+      <div class="price">#499.99</div>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+      <div class="icons">
+    <a href="#" class="fas fa-shopping-cart"></a>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-eye"></a>
+    </div>
+    <div class="img">
+      <img src="https://mynamepix.com/images/styles/happy-marriage-anniversary-cake-with-name_1271.jpg" alt="no" height="220px" width="220px">
+    </div>
+    <div class="content">
+      <h3>Anniversary Cake</h3>
+      <div class="price">#249.99</div>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+   <div class="heading">
+    <h1>About Cake Shop</h1>
+  </div>
+  <section class="about">
+    <div class="img">
+      <img src="">
+    </div>
+    <div class="content">
+      <span>Welcome to our products</span>
+      <h3>cake-A-Licious products</h3>
+      <p>We at The Cake Shop specialize in Desserts & Cakes. we believe in "Quality in our Edge", 
+      from selecting the ingredients around India to the final exqusite creation that "Bring you smiles for Sure"</p>
+    <p> We spend more time in understanding customers expectation.</p>
+    <a href="#" class="btn">read more</a>
+    </div>
+  </section>
+  
+  <section class="gallery">
+     <h1 class="title">our <span>gallery</span><a href="#">view all >></a> </h1>
+     <div class="box-container">
+       <div class="box">
+         <img src="https://th.bing.com/th/id/OIP.AVUtSrxVI3u6STKYEhZF6wHaJM?w=227&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+         <div class="icons">
+           <a href="#"class="fas fa-eye"></a>
+           <a href="#" class="fas fa-heart"></a>
+           <a href="#" class="fas fa-share-alt"></a>
+         </div>
+       </div>
+       <div class="box">
+         <img src="https://th.bing.com/th/id/OIP.TVpuEdNg3opg7IXlwhV-cAHaHa?w=151&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+         <div class="icons">
+           <a href="#"class="fas fa-eye"></a>
+           <a href="#" class="fas fa-heart"></a>
+           <a href="#" class="fas fa-share-alt"></a>
+         </div>
+       </div>
+       <div class="box">
+         <img src="https://th.bing.com/th/id/OIP.yfHZQC0dlWWM8DqG8hReoQHaHa?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+         <div class="icons">
+           <a href="#"class="fas fa-eye"></a>
+           <a href="#" class="fas fa-heart"></a>
+           <a href="#" class="fas fa-share-alt"></a>
+         </div>
+       </div>
+       <div class="box">
+         <img src="https://th.bing.com/th/id/OIP.VVTqF80re4-3afICgbRybQHaHa?w=166&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+         <div class="icons">
+           <a href="#"class="fas fa-eye"></a>
+           <a href="#" class="fas fa-heart"></a>
+           <a href="#" class="fas fa-share-alt"></a>
+         </div>
+       </div>
+       <div class="box">
+         <img src="https://th.bing.com/th/id/OIP.9awTvC3ipAEQC90MA2JNFgAAAA?w=173&h=150&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px"> 
+         <div class="icons">
+           <a href="#"class="fas fa-eye"></a>
+           <a href="#" class="fas fa-heart"></a>
+           <a href="#" class="fas fa-share-alt"></a>
+         </div>
+       </div>
+       <div class="box">
+         <img src="https://th.bing.com/th/id/OIP.QPZfPaC5oRgYRH9_slh2OwAAAA?w=201&h=201&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt=" no" height="220px" width="220px">
+         <div class="icons">
+           <a href="#"class="fas fa-eye"></a>
+           <a href="#" class="fas fa-heart"></a>
+           <a href="#" class="fas fa-share-alt"></a>
+         </div>
+       </div>
+     </div>
+    
+  </section>
+  <div class="heading">
+    <h1>client's reviews</h1>
+  </div>
+  <section class="info-container">
+    <div class="info">
+      <img src="https://th.bing.com/th/id/OIP.Wpk32wEIRtS4K5QfrHEerAAAAA?w=207&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+      <div class="content">
+        <h3>Fast delivery </h3>
+        <span>with in 30 minutes</span>
+      </div>
+    </div>
+       <div class="info">
+      <img src="https://th.bing.com/th/id/OIP.uRimIy4OMxWkvqYuJMKH2QAAAA?w=160&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+      <div class="content">
+        <h3>Easy paments</h3>
+        <span>Cash or Creditcard</span>
+      </div>
+    </div>
+       <div class="info">
+      <img src="https://th.bing.com/th/id/OIP.ufrOh5U3ns9PfWurQmu_9gHaHa?w=173&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+      <div class="content">
+        <h3>24/7 Availble</h3>
+        <span>Call us any time</span>
+      </div>
+    </div>
+  </section>
+  
+  <section class="review">
+    <div class="box">
+      <div class="user">
+        <img src="https://th.bing.com/th/id/OIP.5wctfV9LLYOAZuasZbyuqgHaMl?w=186&h=317&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+        <div class="info">
+          <h3><i>The cake was so tasty and looked absolutely perfect</i></h3>
+          <span>happy client for  <b>Power Star</b></span>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="user">
+        <img src="https://th.bing.com/th/id/OIP.x0mfwHtT9jerWqW_o2bZFAHaLG?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+        <div class="info">
+          <h3><i>Beautifully made cake and it tasted amazing too</i></h3>
+          <span>happy client for  <b>Boss</b></span>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="user">
+        <img src="https://th.bing.com/th/id/OIP.YxHNz2szbdElQrW5ne_mkAHaFj?w=186&h=140&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+        <div class="info">
+          <h3><i>So soft, moist, and delicious — plus the decoration was beautiful</i></h3>
+          <span>happy client for  <b>Cherry</b></span>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="user">
+        <img src="https://th.bing.com/th/id/OIP.S-FMXXaVvYvf2TqDbkNpYAHaIL?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+        <div class="info">
+          <h3><i>Everyone praised the cake. It looked lovely and tasted even better</i></h3>
+          <span>happy client for  <b>Darling</b></span>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="user">
+        <img src="https://cdn.gulte.com/wp-content/uploads/2023/03/NTR2.jpg" alt="no " height="220px" width="220px">
+        <div class="info">
+          <h3><i>Presentation was amazing and the cake melted in the mouth</i></h3>
+          <span>happy client for  <b>Young Tiger</b></span>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="user">
+        <img src="https://e0.pxfuel.com/wallpapers/542/374/desktop-wallpaper-mahesh-babu-vaari-sarkaruvaaripaata-sarkar-kalavati-kalaavathi-paata-kalavathi.jpg" alt="no" height="220px" width="220px">
+        <div class="info">
+          <h3><i>Impressed with how it looked and tasted. Highly recommended</i></h3>
+          <span>happy client for  <b>Prince</b></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="heading">
+    <h1>our blogs</h1>
+  </div>
+  <section class="blogs">
+    <h1 class="title">our <span>blogs</span><a href="#">view all >></a></h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="img">
+        <img src="https://th.bing.com/th/id/OIP.2JnDbk0YxmNssHwS5KB9tQHaFW?w=271&h=196&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+      </div>
+      <div class="content">
+      <div class="icons">
+        <a href="#"><i class="fas fa-calender"></i>12 jan 2023</a>
+          <a href="#"><i class="fas fa-user"></i>by administrator</a>
+      </div>
+      <h3>blogs pieces</h3>
+      <p>....</p>
+      <a href="#" class="btn">read more.....</a>
+      </div>
+    </div><div class="box">
+        <div class="img">
+        <img src="https://th.bing.com/th/id/OIP.jm8hjfdzVEdhn9B483DPxQHaEK?w=294&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+      </div>
+      <div class="content">
+      <div class="icons">
+        <a href="#"><i class="fas fa-calender"></i>12 jan 2023</a>
+          <a href="#"><i class="fas fa-user"></i>by administrator</a>
+      </div>
+      <h3>blogs piece</h3>
+      <p>....</p>
+      <a href="#" class="btn">read more.....</a>
+      </div>
+    </div>
+    <div class="box">
+        <div class="img">
+        <img src="https://th.bing.com/th/id/OIP.3eZsYkG04LPdXb5CFSY-iAHaE7?w=283&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+      </div>
+      <div class="content">
+      <div class="icons">
+        <a href="#"><i class="fas fa-calender"></i>12 jan 2023</a>
+          <a href="#"><i class="fas fa-user"></i>by administrator</a>
+      </div>
+      <h3>blogs cup cake</h3>
+      <p>....</p>
+      <a href="#" class="btn">read more.....</a>
+      </div>
+    </div>
+    <div class="box">
+        <div class="img">
+        <img src="https://th.bing.com/th/id/OIP.4OKvX5BVubG_Sq1okEnqAAHaEw?w=240&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no height="220px" width="220px"">
+      </div>
+      <div class="content">
+      <div class="icons">
+        <a href="#"><i class="fas fa-calender"></i>12 jan 2023</a>
+          <a href="#"><i class="fas fa-user"></i>by administrator</a>
+      </div>
+      <h3>blogs  bs ice cream</h3>
+      <p>....</p>
+      <a href="#" class="btn">read more.....</a>
+      </div>
+    </div>
+    <div class="box">
+        <div class="img">
+        <img src="https://th.bing.com/th/id/OIP.hoi2brXZF0pKA8KLq4cbzAHaLD?w=186&h=278&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="no" height="220px" width="220px">
+      </div>
+      <div class="content">
+      <div class="icons">
+        <a href="#"><i class="fas fa-calender"></i>12 jan 2023</a>
+          <a href="#"><i class="fas fa-user"></i>by administrator</a>
+      </div>
+      <h3>blogs chaco ice cream</h3>
+      <p>....</p>
+      <a href="#" class="btn">read more.....</a>
+      </div>
+    </div>
+    <div class="box">
+        <div class="img">
+        <img src="https://1.bp.blogspot.com/-n7Kp_QGL7iM/V1JbnNIk_qI/AAAAAAAADP4/rczlMHxtw1g9ruB2lZ1Po-lYrzvFm2aOwCK4B/s1600/image.jpeg" alt="no" height="220px" width="220px">
+      </div>
+      <div class="content">
+      <div class="icons">
+        <a href="#"><i class="fas fa-calender"></i>12 jan 2023</a>
+          <a href="#"><i class="fas fa-user"></i>by administrator</a>
+      </div>
+      <h3>blogs Egg puff</h3>
+      <p>....</p>
+      <a href="#" class="btn">read more.....</a>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="icons-container">
+      <div class="icons">
+      <i class="fas fa-phone"></i>
+      <h3>our number</h3>
+      <p>123-456-7890</p>
+      <p>098-765-4321</p>
+    </div>
+          <div class="icons">
+      <i class="fas fa-envelope"></i>
+      <h3>our email</h3>
+      <p>kk1234@gmail.com</p>
+      <p>bakery000@gmail.com</p>
+    </div>
+          <div class="icons">
+      <i class="fas fa-map-market-alt"></i>
+      <h3>our address </h3>
+      <p>rjy,india</p>
+    </div>
+  </div>
+  <div class="row">
+    <form action="contact.php" method="post">
+      <h3>get in touch</h3>
+      <div class="inputBox">
+      <input type="text" placeholder="enter your name" class="box">
+      <input type="text" placeholder="enter your email" class="box">
+      </div>
+       <div class="inputBox">
+      <input type="number" placeholder="enter your number" class="box">
+      <input type="text" placeholder="enter your subject" class="box">
+      </div>
+      <textarea placeholder="your message" cols="30" rows="10"></textarea>
+      <input type="submit" value="send message" class="btn">
+    </form>
+    <iframe class="map" src="https://www.sourcecodester.com/sites/default/files/styles/large/public/images/rems/imm.png?itok=17BixJjA"></iframe>
+  </div>
+  </section>
+  <div class="space"></div>
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+      <h3>quick links</h3>
+      <a href="#"><i class="fas fa-arrow-right"></i>home</a>
+      <a href="#"><i class="fas fa-arrow-right"></i>shop</a>
+      <a href="#"><i class="fas fa-arrow-right"></i>about</a>
+      <a href="#"><i class="fas fa-arrow-right"></i>review</a>
+      <a href="#"><i class="fas fa-arrow-right"></i>blog</a>
+      <a href="#"><i class="fas fa-arrow-right"></i>contact</a>
+      </div>
+      <div class="box">
+        <h3>extra links</h3>
+        <a href="#"><i class="fas fa-arrow-right"></i>my order</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>my favorite</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>my wishlist</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>my account</a>
+        <a href="#"><i class="fas fa-arrow-right"></i> terms or use</a>
+      </div>
+      <div class="box">
+        <h3>news letter</h3>
+        <p>subscribe for latest upadate</p>
+         <form action="contact.php" method="post">
+          <input type="email" placeholder="enter your email address">
+          <input type="submit" value="subscribe" class="btn">
+           </form>
+          <img src="" class="payments" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="credit">credited by daily webdesign ||all right reserved</section>
+  
+
+  <section class="credit">credited by daily webdesign || all rights reserved</section>
+  </div>
+  <script  src=C:\Users\vasam\OneDrive\Desktop\html5\html5\index.js></script>
+</body>
+</html>
+
